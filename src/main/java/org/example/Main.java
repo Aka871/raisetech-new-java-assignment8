@@ -13,7 +13,8 @@ public class Main {
       Files.writeString(path, "継続は力なり！", StandardOpenOption.APPEND);
       System.out.println(Files.readString(path));
     } catch (IOException e) {
-
+      e.printStackTrace();
+      System.out.println("例外が発生した。");
     }
   }
 }
